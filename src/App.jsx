@@ -15,7 +15,9 @@ function App() {
   const data = () => {
     const result = trimLink(links); // Extract the part after "/s/1"
     const newVideoLink = `https://www.1024terabox.com/sharing/embed?autoplay=true&resolution=1080&mute=false&surl=${result}`;
-    setVideoLink(newVideoLink); // Update the state with the new video link
+    setVideoLink(newVideoLink); 
+    setLinks("");
+    // Update the state with the new video link
   };
 
   return (
